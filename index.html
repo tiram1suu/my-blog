@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="title">
+            <img src="pics/Vector.png" alt="stile.ru">
+            <h1>Всем привет, это мой айти блог в Стилеру</h1>
+            <p>Это домашка в рамках Осенней школы по веб-разработке, которую я обещаю закончить и попасть в бигтех</p>
+        </div>
+
+        <div class="about_me">
+            <h2>Кто же я по жизни</h2>
+            <div class="card">
+                <img src="pics/clown.jpeg" alt="clown konstantin" width="80px" height="80px">
+                <div class="content">
+                    <div class="name">
+                        <p>Константин Константинопольский</p>
+                        <img src="pics/pencil-xxl.png" alt="pencil" class="pencil">
+
+                    </div>
+
+                    <div class="person_info">
+                        <div class="person_info__text_container">
+                            <p class="person_info__subtitle">Место учебы</p>
+                            <p>хихигс</p>
+                        </div>
+                        <div class="person_info__text_container">
+                            <p class="person_info__subtitle">Возраст</p>
+                            <p>20 лет</p>
+                        </div>
+                        <div class="person_info__text_container">
+                            <p class="person_info__subtitle">Увлечения</p>
+                            <p>Программирование, игры, книги и дркгая залупень</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form">
+            <div class="frame2113">
+                <h2>Создать новый пост</h2>
+                <p>Применяем навыки логики JS: Form submission + LocalStorage</p>
+            </div>
+            <div class="form_form" id="postForm">
+                <div class="input">
+                    <input type="text" id="postTitle" placeholder="Название поста" maxlength="100">
+                    <div class="error-message" id="titleError"></div>
+                </div>
+                <div class="big_input">
+                    <textarea id="postContent" placeholder="Начните свой пост..." maxlength="1000"></textarea>
+                    <div class="error-message" id="contentError"></div>
+                </div>
+                <div class="button_post" id="submitPost">
+                    <p>Выложить пост</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="frame_posts">
+        <h2>Мои посты</h2>
+        <div class="my_posts">
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>Респект вам за домашку</p>
+
+        <div class="buttons">
+            <a href="https://t.me/styleruorg" target="_blank"><button class="blue">Телеграм Cтилеру</button></a>
+            <a href="https://styleru.org/" target="_blank"><button class="with_border">Сайт </button></a>
+        </div>
+
+        <p class="made_with">Made with love at HSE|Learn HTML, CSS & JavaScript</p>
+
+    </div>
+
+    </div>
+
+    <!-- модальное окно -->
+    <div class="modal-overlay" id="editModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Редактировать информацию</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="editForm">
+                    <div class="form-group">
+                        <label for="editName">Имя и фамилия</label>
+                        <input type="text" id="editName" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editStudy">Место учебы</label>
+                        <input type="text" id="editStudy" name="study">
+                    </div>
+                    <div class="form-group">
+                        <label for="editAge">Возраст</label>
+                        <input type="text" id="editAge" name="age">
+                    </div>
+                    <div class="form-group">
+                        <label for="editHobbies">Увлечения</label>
+                        <textarea id="editHobbies" name="hobbies" rows="3"></textarea>
+                    </div>
+                    <div class="modal-buttons">
+                        <button type="button" class="cancel-btn">Отмена</button>
+                        <button type="submit" class="save-btn">Сохранить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
